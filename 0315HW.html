@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>賈以食日(假的)</title>
+    <Style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .first{
+            width: 60px;
+            background-color: white;
+            margin: 5px;
+            padding: 5px;
+            border: 1px solid gray;
+            font-size: 5px;
+            
+        }
+        #top {
+            display: flex;                  /*物件橫排*/
+            justify-content: flex-end; 
+            position: fixed;
+            right: 0px;                     /*物件固定*/
+            text-align: center;             /*字中*/
+            font-family: 微軟正黑體;
+        }
+        .header{
+            width: 1200px;
+            margin: auto;
+            background-color: white;
+        }
+        .header img{
+            width: 400px;
+            padding: 10px;
+        }
+        .banner{
+            width: 1200px;
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+            justify-content: flex-end;
+            /*border-top: 2px solid rgb(158, 158, 158);
+            border-bottom: 2px solid rgb(158, 158, 158);*/
+        }
+        .ban{
+            width: 180px;
+            padding: 5px;
+            border: 5px;
+            
+        }
+        .ad{
+            /*width: 1200px;*/
+            margin: auto;
+        }
+        .ad img{
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px 20px 10px 0px;
+        }
+        .newproduct{
+            width: 1200px;
+            margin: auto;
+        }
+        .newproduct img{
+            width: 100%;
+            padding: 0px 20px 10px 0px;
+        }
+        .np{
+            width: 1200px;
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+        }
+        .item img{
+            width: 500px;
+            padding: 40px 60px 0px 40px;
+        }
+        .item h3{
+            padding: 0px 60px 0px 40px;
+        }
+        .item p{
+            padding: 0px 60px 0px 40px;
+        }
+        .cornerproduct{
+            width: 1200px;
+            margin: auto;
+        }
+        .cornerproduct img{
+            width: 1160px;
+            padding: 20px 20px 0px 20px;
+        }
+        .cornerproduct h3{
+            padding: 0px 20px 0px 20px;
+        }
+        .cornerproduct p{
+            padding: 0px 20px 0px 20px;
+        }
+        .cp{
+            width: 1200px;
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+        }
+        .cp img{
+            width: 320px;
+            padding: 20px 20px 0px 30px;
+            margin: auto;
+        }
+        .cp h3{
+            padding: 0px 20px 0px 30px;
+            margin: auto;
+        }
+        .cp p{
+            padding: 0px 20px 0px 30px;
+            margin: auto;
+        }
+        .pot{
+            width: 1200px;
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+        }
+        .tai{
+            width: 1200px;
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+        }
+        .hotproduct{
+            width: 1200px;
+            margin: auto;
+        }
+        .hotproduct img{
+            width: 100%;
+            padding: 0px 20px 10px 0px;
+        }
+        .hp-1{
+            width: 1200px;
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+        }
+        .hp-1 img{
+            width: 320px;
+            padding: 20px 20px 0px 50px;
+            opacity: .5;
+            margin: auto;
+        }
+        .hp-1 h3{
+            padding: 0px 20px 0px 50px;
+            margin: auto;
+        }
+        .hp-1 p{
+            padding: 0px 20px 0px 50px;
+            margin: auto;
+        }
+        .hp-2{
+            width: 1200px;
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+        }
+        .hp-3{
+            width: 1200px;
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+        }
+        .saleproduct{
+            width: 1200px;
+            margin: auto;
+        }
+        .saleproduct img{
+            width: 100%;
+            padding: 0px 20px 10px 0px;
+        }
+        .sp{
+            width: 1200px;
+            margin: auto;
+        }
+        .sp img{
+            width: 1160px;
+            padding: 20px 20px 0px 20px;
+            opacity: .5;
+        }
+        .sp h3{
+            padding: 0px 20px 0px 20px;
+        }
+        .sp p{
+            padding: 0px 20px 0px 20px;
+        }
+        .findus{
+            width: 1200px;
+            display: flex;
+            flex-wrap:wrap;
+            margin: auto;
+        }
+        .findus img{
+            flex-direction: row;
+            width: 260px;
+            margin: auto;
+            padding: 20px 20px 30px 20px;
+        }
+        .final{
+            width: 1200px;
+            display: flex;
+            flex-wrap:wrap;
+            margin: auto;
+        }
+        .final p{
+            margin: auto;
+            padding: 0px 0px 20px 0px;
+        }
+    </Style>
+</head>
+<body>
+        <ul id="top">
+            <div class="first"><span style="color:gray;">登入會員</span></div>
+            <div class="first"><span style="color:gray;">購物車</span></div>
+            <div class="first"><span style="color:gray;">聯絡我們</span></div>
+            <div class="first"><span style="color:gray;">繁體中文</span></div>
+            <div class="first"><span style="color:gray;">TWD$</span></div>
+            <div class="first"><span style="color:gray;">搜尋🔍︎</span></div>
+        </ul>
+    <div class="header" >
+        <img src="../0315HW-img/logo.png" style="display: block;margin: auto;" alt="賈以食日"  >
+    </div>
+    <div class="banner">
+        <div class="ban"><span>食我-ABOUT US</span></div>
+        <div class="ban"><span>食麵-NOODLES</span></div>
+        <div class="ban"><span>食事-EVENT</span></div>
+        <div class="ban"><span>食品味-GOOD SENSE</span></div>
+        <div class="ban"><span>食影音-VIDEOS</span></div>
+        <div class="ban"><span>國際專區-OVERSEAS</span></div>
+    </div>
+    <div class="ad">
+        <img src="../0315HW-img/list-img.webp" alt="賈以食日">
+    </div> 
+
+    
+
+    <div class="newproduct">
+        <img src="../0315HW-img/newproduct.webp" alt="新品上市">
+    </div>
+
+    <div class="np">
+            <div class="item">
+                <img src="../0315HW-img/np-1.webp" alt="拌雙粉 醋香豆瓣（1袋/3入）">
+                <h3>賈以食日-拌雙粉 醋香豆瓣（1袋/3入）</h3>
+                <p>NT$230</p>
+            </div>
+            <div class="item">
+                <img src="../0315HW-img/np-16.webp" alt="拌雙粉 醋香豆瓣（16袋/48入）">
+                <h3>賈以食日-拌雙粉 醋香豆瓣（16袋/48入）</h3>
+                <p>NT$3580</p>
+            </div>
+    </div>
+    <div class="cornerproduct">
+        <img src="../0315HW-img/cp.webp" alt="角落生物聯名">
+        <h3>賈以食日-角落小夥伴 寶貝麵三入綜合提袋組</h3>
+        <p>NT$499</p>
+    </div>
+    <div class="cp">
+        <div class="item">
+            <img src="../0315HW-img/cp-1.webp" alt="經典原味">
+            <h3>賈以食日-角落小夥伴 寶貝麵（經典原味）</h3>
+            <p>NT$159</p>
+        </div>
+        <div class="item">
+            <img src="../0315HW-img/cp-2.webp" alt="綜合蔬菜">
+            <h3>賈以食日-角落小夥伴 寶貝麵（綜合蔬菜）</h3>
+            <p>NT$159</p>
+        </div>
+        <div class="item">
+            <img src="../0315HW-img/cp-3.webp" alt="南瓜地瓜">
+            <h3>賈以食日-角落小夥伴 寶貝麵（南瓜地瓜）</h3>
+            <p>NT$159</p>
+        </div>
+    </div>
+    <div class="pot">
+        <div class="item">
+            <img src="../0315HW-img/noodle-1.webp" alt="干貝鍋燒意麵">
+            <h3>賈以食日-干貝鍋燒意麵</h3>
+            <p>NT$138</p>
+        </div>
+        <div class="item">
+            <img src="../0315HW-img/noodle-2.webp" alt="干貝鍋燒意麵">
+            <h3>賈以食日-干貝鍋燒意麵 (1箱/16盒)</h3>
+            <p>NT$2080</p>
+        </div>
+    </div>
+    <div class="tai">
+        <div class="item">
+            <img src="../0315HW-img/noodle-3.webp" alt="泰式酸辣粉">
+            <h3>賈以食日-泰式酸辣粉 (1盒/3入)</h3>
+            <p>NT$220</p>
+        </div>
+        <div class="item">
+            <img src="../0315HW-img/noodle-4.webp" alt="泰式酸辣粉">
+            <h3>賈以食日-泰式酸辣粉 (1箱/16盒)</h3>
+            <p>NT$3360</p>
+        </div>
+    </div>
+    <div class="hotproduct">
+        <img src="../0315HW-img/hotproduct.webp" alt="精選商品">
+    </div>
+    <div class="hp-1">
+        <div class="item">
+            <img src="../0315HW-img/hp-1.webp" alt="麻花麵">
+            <h3>賈以食日-麻花麵 (1袋/4入)</h3>
+            <p>NT$268</p>
+        </div>
+        <div class="item">
+            <img src="../0315HW-img/hp-2.webp" alt="燒椒麵">
+            <h3>賈以食日-燒椒麵 (1袋/4入)</h3>
+            <p>NT$268</p>
+        </div>
+        <div class="item">
+            <img src="../0315HW-img/hp-3.webp" alt="麻薑麵">
+            <h3>賈以食日-麻薑麵 (1袋/4入)</h3>
+            <p>NT$268</p>
+        </div>
+    </div>
+    <div class="hp-2">
+        <div class="item">
+            <img src="../0315HW-img/hp-4.webp" alt="麻辣鴨血冬粉">
+            <h3>賈以食日-麻辣鴨血冬粉</h3>
+            <p>NT$159</p>
+        </div>
+        <div class="item">
+            <img src="../0315HW-img/hp-5.webp" alt="麻辣鴨血冬粉(箱)">
+            <h3>賈以食日-麻辣鴨血冬粉 (1箱/20盒)</h3>
+            <p>NT$3180</p>
+        </div>
+    </div>
+    <div class="hp-3">
+        <div class="item">
+            <img src="../0315HW-img/hp-6.webp" alt="雪莓餅">
+            <h3>賈以食日-雪莓餅(期間限定，售完為止)</h3>
+            <p>NT$230</p>
+        </div>
+    </div>
+    <div class="saleproduct">
+        <img src="../0315HW-img/sale.webp" alt="賈以食日">
+    </div>
+    <div class="sp">
+        <div class="product">
+            <img src="../0315HW-img/sale-1.webp" alt="HAPPY 牛 YEAR 福箱" srcset="">
+            <h3>賈以食日-2021 HAPPY 牛 YEAR 福箱</h3>
+            <p>NT$999</p>
+        </div>
+    </div>
+    <div class="findus">
+        <img src="../0315HW-img/fb.webp" alt="Instagram">
+        <img src="../0315HW-img/ig.webp" alt="Facebook">
+        <img src="../0315HW-img/line.webp" alt="LINE">
+        <img src="../0315HW-img/other.webp" alt="佐室">
+    </div>
+
+    <div class="final"><p>隱私權聲明| 服務條款 | 2018 © 賈以食日 拾躍創意國際有限公司 02-2579-2323</p></div>
+</body>
+</html>
