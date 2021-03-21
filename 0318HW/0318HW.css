@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.header{
+    width: 100%;
+    height: 590px;
+    background-image: url(../FrontEnd-BuildSchool/0318HW/img/02.jpeg) ;
+    background-size: cover;
+}
+.title{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    opacity: .3;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+#theone{
+    opacity: 1;
+    width: 150px;
+    left: 0;
+    right: 0;
+    margin: 25px 0 20px 0;
+}
+.title a{
+    font-size: 12px;
+    color: whitesmoke;
+    padding: 15px;
+}
+.text{
+    color: whitesmoke;
+    width: 720px;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.text h1{
+    font-size: 100px;
+}
+.text p{
+    font-size: 20px;
+}
+.header-end{
+    width: 1020px;
+    height: 245px;
+    margin: auto;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    padding: 0 0 15px;
+}
+.start,.center,.end{
+    font-size: 16px;
+    width: 300px;
+    padding: 10px 0 20px;              
+    border-top: 1px solid transparent;  /*處理上邊線*/
+}
+.ImgAndh2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 0 10px 0;
+}
+/* 下方為觸碰就會出現線條 */
+.start:hover,.center:hover,.end:hover{
+    border-top: 1px solid #CDBA96;
+    transition: .4s;
+}
+.ImgAndh2 img{
+    right: 0;
+    margin: 0 15px 0px 0;
+
+}
+.header-end p{
+    width: 250px;
+}
+.depicition{
+    width: 1000px;
+    height: 285px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.depicition h1{
+    width: 33.3333%;
+    margin: 0 50px 0 0;
+}
+.depicition p{
+    width: 66.6667%;
+    column-count: 2;
+    column-gap: 50px;
+    border-left: 3px solid #ccc;
+    padding: 10px 0 30px 20px;
+    font-size: 20px;
+}
+.depicition p:first-letter{
+    color: 	#CDBA96;
+    font-size: 60px;
+    float: left;
+}
+.depicitiontwo{
+    width: 100%;
+    height: 200px;
+    background-color:	#CDBA96;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.h2Andp h2{
+    font-size: 35px;
+    margin: 10px 0;
+}
+.h2Andp p,h2{
+    color: #fff;
+}
+button{
+    color:black;
+    font-size: 10px;
+    background-color: #fff;
+    padding: 15px 25px;
+    border-radius: 6px;
+    border: none;
+}
+button:hover{
+    background-color: #CDBA96;
+    border: 1px solid #fff;
+}
+.introduction{
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.WhyChooseUs{
+    width: 700px;;
+    height: 200px;
+    padding: 40px 10px 0 10px;
+    margin: auto;
+}
+.WhyChooseUs h1{
+    display: flex;
+    justify-content: center;
+    margin: 0 0 30px;
+}
+.WhyChooseUs p{
+    text-align: center;
+}
+.content{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap;
+    justify-content: space-evenly; */
+}
+.saysomething{
+    width: 33.3333%;
+    height: 510px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+.detailone-item h3,.detailtwo-item h3{
+    color: #CDBA96;
+}
+.detailone{
+    display: flex;
+    margin: 0 50px 0 0;
+}
+.detailone-item{
+    display: block;
+    text-align: end;
+    margin: 0 10px 0 0;
+}
+.detailone-item p{
+    width: 250px;
+}
+.smallimg{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.phone{
+    width: 250px;
+    height: 510px;
+}
+.detailtwo{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0 0 0 50px;
+}
+.detailtwo-item{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 0 10px;
+}
+.detailtwo-item h3{
+    width: 100%;
+}
+.detailtwo-item p{
+    width: 300px;
+}
+.count{
+    background-image: url(/FrontEnd-BuildSchool/0318HW/img/04.jpeg);
+    width: 100%;
+    height: 360px;
+    background-size: cover;
+    opacity: .8;
+    display: flex;
+}
+.count-value{
+    width: 25%;
+    height: 240px;
+    opacity: 1;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.count-img{
+    margin: auto;
+    width: 60px;
+    height: 60px;
+}
+.h1andp{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.h1andp h1{
+    font-size: 50px;
+}
+.h1andp h3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.area{
+    width: 100%;
+    height: 440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.goodat{
+    width: 1000px;
+    height: 330px;
+    background-color: #faa;
+    display: flex;
+    flex-direction: column;
+}
+.goodat h1{
+    margin: 20px 0;
+}
+.desandper{
+    width: 100%;
+    height: 220px;
+    display: flex;
+}
+.description{
+    width: 500px;
+    height: 220px;
+    background-color: #aff;
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: outside;
+}
