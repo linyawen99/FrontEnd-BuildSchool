@@ -6,7 +6,7 @@
 .header{
     width: 100%;
     height: 590px;
-    background-image: url(/img/img02.jpeg) ;
+    background-image: url(/img/02.jpg) ;
     background-size: cover;
 }
 .title{
@@ -213,7 +213,7 @@ button:hover{
     width: 300px;
 }
 .count{
-    background-image: url(/img/04.jpeg);
+    background-image: url(/img/04.jpg);
     width: 100%;
     height: 360px;
     background-size: cover;
